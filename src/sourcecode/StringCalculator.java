@@ -19,8 +19,17 @@ public class StringCalculator {
 		}
 		int sum = 0;
 		for (int i = 0; i < number.length; i++) {
-			sum += Integer.parseInt(number[i]);
+			int temp;
+			try {
+				temp = Integer.parseInt(number[i]);
+				sum+=temp;
+			} catch (NumberFormatException exception) {
+				throw new NumberFormatException("Alphabet not allowed");
+			}
+			
 		}
+		
+		
 
 		return sum;
 	}

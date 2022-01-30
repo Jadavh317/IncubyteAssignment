@@ -58,4 +58,11 @@ public class TestJUnit {
 		assertEquals(19, calculator.addNum("\n4\n;;5\n;;3\n;;5\n;;2\n"));
 	}
 	
+	@Test
+	public void containAlphbet() {
+		assertThrows(NumberFormatException.class, () -> {
+			calculator.addNum("B,2;S 4");
+		});
+	}
+	
 }
