@@ -32,4 +32,9 @@ public class TestJUnit {
 	public void whiteSpaceCheck() {
 		assertEquals(0, calculator.addNum("   "));
 	}
+	
+	@Test
+	public void onlyOneInteger() {
+		assertEquals(9, calculator.addNum("9"));
+	}
 }

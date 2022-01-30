@@ -10,7 +10,13 @@ public class StringCalculator {
 		if (numbers.equals("")) {
 			return 0;
 		}
-
+		
+		String number[]=numbers.split(",");
+		
+		if(number.length==1) {
+			return Integer.parseInt(number[0]);
+		}
+		
 		return 0;
 	}
 
