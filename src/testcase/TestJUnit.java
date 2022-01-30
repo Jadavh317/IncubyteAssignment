@@ -52,4 +52,10 @@ public class TestJUnit {
 	public void containNewLineAndComma() {
 		assertEquals(21, calculator.addNum("8\n6,3 4"));
 	}
+	
+	@Test
+	public void containNewLineAndComma1() {
+		assertEquals(19, calculator.addNum("\n4\n;;5\n;;3\n;;5\n;;2\n"));
+	}
+	
 }
