@@ -37,4 +37,9 @@ public class TestJUnit {
 	public void onlyOneInteger() {
 		assertEquals(9, calculator.addNum("9"));
 	}
+	
+	@Test
+	public void conatinMoreThanOneInteger() {
+		assertEquals(11, calculator.addNum("5,6"));
+	}
 }

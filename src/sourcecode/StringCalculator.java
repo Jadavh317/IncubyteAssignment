@@ -16,8 +16,12 @@ public class StringCalculator {
 		if(number.length==1) {
 			return Integer.parseInt(number[0]);
 		}
+		int sum=0;
+		for(int i=0;i<number.length;i++) {
+			sum+=Integer.parseInt(number[i]);
+		}
 		
-		return 0;
+		return sum;
 	}
 
 }
