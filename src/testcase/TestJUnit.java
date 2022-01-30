@@ -24,7 +24,12 @@ public class TestJUnit {
 	}
 
 	@Test
-	public void emptyStringCheck() {
+	public void emptyStringCheck() {	
 		assertEquals(0, calculator.addNum(""));
+	}
+	
+	@Test
+	public void whiteSpaceCheck() {
+		assertEquals(0, calculator.addNum("   "));
 	}
 }
