@@ -47,4 +47,9 @@ public class TestJUnit {
 	public void conatinMoreThanOneInteger1() {
 		assertEquals(21, calculator.addNum("4,8,6,3"));
 	}	
+	
+	@Test
+	public void containNewLineAndComma() {
+		assertEquals(21, calculator.addNum("8\n6,3 4"));
+	}
 }
