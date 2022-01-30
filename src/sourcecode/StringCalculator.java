@@ -22,14 +22,14 @@ public class StringCalculator {
 			int temp;
 			try {
 				temp = Integer.parseInt(number[i]);
-				sum+=temp;
+				if (temp < 0)
+					throw new IllegalArgumentException("Negative Number is not allowed");
+				sum += temp;
 			} catch (NumberFormatException exception) {
 				throw new NumberFormatException("Alphabet not allowed");
 			}
-			
+
 		}
-		
-		
 
 		return sum;
 	}

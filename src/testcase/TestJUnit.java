@@ -65,4 +65,11 @@ public class TestJUnit {
 		});
 	}
 	
+	@Test
+	public void containNegativeNumber() {
+		assertThrows(IllegalArgumentException.class, () -> {
+			calculator.addNum("6,5;-8,-2");
+		});
+	}
+	
 }
