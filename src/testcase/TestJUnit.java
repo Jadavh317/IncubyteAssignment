@@ -42,4 +42,9 @@ public class TestJUnit {
 	public void conatinMoreThanOneInteger() {
 		assertEquals(11, calculator.addNum("5,6"));
 	}
+	
+	@Test
+	public void conatinMoreThanOneInteger1() {
+		assertEquals(21, calculator.addNum("4,8,6,3"));
+	}	
 }
